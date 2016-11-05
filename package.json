@@ -1,8 +1,8 @@
 {
-  "name": "cgx-ui",
+  "name": "cgx-jsx",
   "version": "0.1.0",
-  "description": "Minimal UI framework.",
-  "main": "dist/cgx-ui.min.js",
+  "description": "Minimal JSX function.",
+  "main": "dist/cgx-jsx.min.js",
   "scripts": {
     "build": "gulp build"
   },
