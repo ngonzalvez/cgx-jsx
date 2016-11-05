@@ -1,0 +1,25 @@
+{
+  "name": "cgx-ui",
+  "version": "0.1.0",
+  "description": "Minimal UI framework.",
+  "main": "dist/cgx-ui.min.js",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "keywords": [
+    "ui",
+    "component",
+    "lightweight",
+    "framework",
+    "dom"
+  ],
+  "author": "Nicolas Gonzalvez <n.gonzalvez@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}
