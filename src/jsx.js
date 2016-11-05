@@ -2,14 +2,18 @@ function $h(tag, attributes) {
   var d = document;
   var args = arguments;
   var i;
+  var instance;
 
   // Standard tags.
   if (typeof tag === 'string') {
     tag = d.createElement(tag);
 
   // Components with a render method.
-  } else if (tag.prototype.render) {
-    tag = (new tag()).render();
+  } else {
+    try {
+      instance = new tag();
+      tag = instance.render();
+    } catch(e) {}
   }
 
   for (i in attributes) {
@@ -18,11 +22,14 @@ function $h(tag, attributes) {
 
   // Append all given children.
   for (i = 2; i < args.length; i++) {
-    tag.appendChild(typeof child === 'string' ? d.createTextNode(args[i])
-                                              : args[i]);
+    tag.appendChild(
+      typeof args[i] === 'string'
+        ? d.createTextNode(args[i])
+        : args[i]
+    );
   }
 
-  return tag ;
+  return tag;
 };
 
 
