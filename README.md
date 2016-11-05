@@ -53,9 +53,13 @@ const CustomHeader = (
 );
 
 const Page = (
-    <CustomHeader/>
-    <p>Welcome!</p>
+    <div>
+        <CustomHeader/>
+        <p>Welcome!</p>
+    </div>
 );
+
+document.onload = () => document.body.appendChild(Page);
 ~~~
 
 or using classes:
@@ -80,10 +84,16 @@ class Header {
 class Page {
     render() {
         return (
-            <CustomHeader/>
-            <p>Welcome!</p>
+            <div>
+                <CustomHeader/>
+                <p>Welcome!</p>
+            </div>
         );
     }
 }
 
+document.onload = () => {
+    var page = new Page();
+    document.body.appendChild(page.render());
+};
 ~~~
