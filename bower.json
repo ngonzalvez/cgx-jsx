@@ -1,0 +1,24 @@
+{
+  "name": "cgx-jsx",
+  "description": "Minimal JSX function.",
+  "main": "dist/cgx-jsx.min.js",
+  "authors": [
+    "Nicolas Gonzalvez <n.gonzalvez@outlook.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "component",
+    "lightweight",
+    "framework",
+    "dom"
+  ],
+  "homepage": "https://github.com/ngonzalvez/cgx-jsx",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
